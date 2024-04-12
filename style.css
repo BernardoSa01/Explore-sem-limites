@@ -1,0 +1,406 @@
+/*     Global     */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --base-font: 'Mulish', sans-serif;
+
+  --color-base-light-gray: hsl(283, 47%, 97%);
+  --color-base-white: hsl(0, 0%, 100%);
+  --background-gradient: linear-gradient(96.21deg, hsl(242, 50%, 38%) 0%, hsl(244, 38%, 28%) 99.68%);
+  --color-base-pink: hsl(320, 69%, 42%);
+  --color-base-text-blue: hsl(244, 38%, 28%);
+}
+
+#page {
+  width: 44rem;
+  margin: 0 auto;
+}
+
+body {
+  text-align: center;
+  font-family: var(--base-font);
+}
+
+/*     Typography     */
+
+#hero h1,
+article h3,
+form h1 {
+  color: var(--color-base-pink);
+  font-weight: 900;
+}
+
+#hero h1, 
+form h1 {
+  font-size: 3.2rem
+ }
+
+#hero h2 {
+  color: var(--color-base-text-blue);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+article h3 {
+  font-size: 2.9rem;
+  margin-bottom: 1.9rem;
+}
+
+article p {
+  color: var(--color-base-text-blue);
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+} 
+
+#form button {
+  color: var(--color-base-white);
+  font-family: var(--base-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+/*     First section     */
+
+#hero {
+  background-color: var(--color-base-light-gray);
+}
+
+#hero img {
+  margin-bottom: 1.7rem;
+}
+
+#hero h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 3.5rem;
+}
+
+#hero #arrow {
+  margin-bottom: 9.3rem;
+}
+
+
+/*     Second section     */
+
+#content {
+  background: var(--background-gradient);
+  width: 100%;
+  height: 100%;
+  padding: 5.3rem 3.9rem 5.5rem;
+  display: grid;
+  gap: 4.9rem;
+}
+
+article {
+  background: var(--color-base-white);
+  padding: 2.6rem;
+  border-radius: 2rem;
+}
+
+article:hover {
+  transform: scale(1.08);
+  transition: transform 280ms ease-out 80ms;
+}
+
+article img {
+  width: 8rem;
+  margin-bottom: 3.3rem;
+  float: left;
+  margin-right: 26px;
+}
+
+article h3,
+article p {
+  clear: both;
+  text-align: justify;
+}
+
+.text {
+  width: 26.5rem;
+}
+
+/*     Third section     */
+
+#form {
+  background: var(--color-base-light-gray);
+  width: 100%;
+  height: 100%;
+  padding: 7.8rem 3.9rem 6.5rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form h1 {
+  margin-bottom: 4.3rem;
+}
+
+#form .input-wrapper {
+  margin-bottom: 2.4rem;
+}
+
+#form input,
+#form textarea {
+  width: 100%;
+  border: 0.15rem solid var(--color-base-text-blue);
+  border-radius: 1.6rem;
+  color: var(--color-base-text-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#form input {
+  padding: 1.2rem 1.6rem 1.2rem 4rem;
+}
+
+#form textarea {
+  height: 12.6rem;
+  padding: 1.2rem 1.6rem 1.6rem;
+  background-color: var(--color-base-light-gray);
+}
+
+#form input::placeholder,
+#form textarea::placeholder {
+  color: var(--color-base-text-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+#form input::placeholder {
+  padding-left: 2.8rem;
+}
+
+#form button {
+  background: var(--background-gradient);
+  padding: 1rem 1.6rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+#form button:hover {
+  filter: brightness(0.9);
+}
+
+#nome {
+  background: url(./assets/personicon.svg) no-repeat scroll 1rem 0.8rem ;
+}
+
+#email {
+  background: url(./assets/emailicon.svg) no-repeat scroll 1rem 0.8rem;
+}
+
+/* Estratégia para esconder a imagem de estrelas, que aparece somente na versão desktop */
+.stars {
+  display: none;
+}
+
+/*     Footer     */
+
+footer {
+  background: var(--background-gradient);
+  padding: 3.2rem 1.6rem;
+}
+
+footer p a {
+  color: var(--color-base-white);
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/*     @media     */
+
+@media (min-width: 1440px) {
+  
+  /*     Global     */ 
+
+  #page {
+    min-width: 144rem;
+  }
+
+  /*     First section     */
+
+  #hero {
+    display: flex;
+    flex-direction: row;
+    gap: 2.8rem;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
+    justify-content: space-between;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #hero .astronaut {
+    order: 2;
+  }
+
+  .astronaut img {
+    width: 71.9rem;
+    max-height: 73.2rem;
+  }
+
+  #hero h1 {
+    margin-top: 31.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 5.8rem;
+  }
+
+  #hero h2 {
+    font-size: 3.2rem;
+    margin-bottom: 17.9rem;
+  }
+
+
+  /*     Second section     */
+
+  #content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    padding: 6.4rem 11.1rem 6.4rem 11.1rem;
+  }
+  
+  article {
+    min-width: 36.6rem;
+    min-height: 44.8rem;
+    padding: 3.2rem;
+  }
+
+  article img {
+    width: 9.7rem;
+    height: 9.7rem;
+  }
+
+  article h3 {
+    font-size: 3.36rem;
+  }
+
+  article p {
+    font-size: 1.9rem;
+  }
+
+  /*     Third section     */
+  
+  #form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 9.2rem;
+    height: 100vh;
+    align-items: center;
+    padding: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 9.5rem;
+    margin-bottom: 9.5rem;
+    padding-left: 10.9rem;
+  }
+  
+  #form h1 {
+    font-size: 4.2rem;
+  }
+  
+  .input-wrapper {
+    width: 59.2rem;
+  }
+  
+  .stars {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 50%; /* Define a largura da imagem como metade do contêiner pai */
+    max-width: calc(50% - 9.2rem); /* Define a largura máxima da imagem subtraindo o gap */
+  }
+
+ 
+  
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+ /* #hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
+  }
+
+  #hero .hero-text {
+    order: 1;
+    margin-top: 31.2rem;
+  }
+
+  #hero img {
+    order: 2;
+  }
+
+
+
+
+
+
+
+  #hero h1 {
+    font-size: 5.8rem; 
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+  }*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
