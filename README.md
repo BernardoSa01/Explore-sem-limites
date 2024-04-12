@@ -4,7 +4,7 @@
 Programa exclusivo, promovido pela trilha Explorer da Rocketseat para ensino de tecnologias WEB. 
 </p>
 
-- [Acesse o projeto finalizado, online](https://bernardosa01.github.io/Fotoblog/)
+- [Acesse o projeto finalizado, online](https://bernardosa01.github.io/Explore-sem-limites/)
 <br><br>
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
